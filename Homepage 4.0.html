@@ -154,7 +154,17 @@
     /* About */
     .about-inner{display:flex;gap:28px;align-items:center}
     .about-text{flex:1}
-    .about-visual{width:380px;height:260px;border-radius:12px;background:linear-gradient(180deg, rgba(72,165,255,0.06), rgba(79,209,197,0.03));display:grid;place-items:center;color:var(--muted);font-weight:600}
+    .about-visual {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(72,165,255,0.06), rgba(79,209,197,0.03));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 
     /* Footer */
     footer{border-top:1px solid rgba(255,255,255,0.03);
@@ -419,12 +429,14 @@
           </div>
         </div>
 
-        <div class="about-visual reveal" aria-hidden>
-          <div>
-            <div style=" color:#daf7f2;"><img src="c:\Users\User\Desktop\ORECH ROCK\TECHNOLOGIES LTD.png" alt=""></div>
-          </div>
-        </div>
-      </div>
+    <div class="about-visual reveal" aria-hidden>
+  <div>
+    <img src="c:\Users\User\Desktop\ORECH ROCK\TECHNOLOGIES LTD.png" 
+         alt="Orech Rock Logo"
+         style="max-width: 220px; width: 100%; height: auto; display: block; margin: 0 auto;">
+  </div>
+</div>
+
     </section>
 
     <section id="services" class="section">
